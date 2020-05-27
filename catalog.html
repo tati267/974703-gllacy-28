@@ -6,10 +6,11 @@
   </head>
   <body>
     <header class="main-header">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/index-logos.svg" width="154" height="64" alt="Логотип Gllacy">
+      </a>
+
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/index-logos.svg" width="154" height="64" alt="Логотип Gllacy">
-        </a>
         
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
@@ -25,33 +26,38 @@
           <li><a href="#">О компании</a></li>
         </ul>
 
-        <ul class="user-navigation">
-            <li class="find"><button></button>
-              <div class="find-popup">
-                <form class="find" id="search-form" action="/" method="get">
-                <input type="text"  placeholder="Что ищем?" />
-                </form>
-              </div>
-            </li> 
-            <li class="login"><a class="login-link" href="login.html">Вход</a>
-              <div class="login-popup">
-                <form class="login-form" id="login-form" action="/" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <div class="links-container">
-                    <button class="button button-login" type="button">Войти</button>  
-                    <div class="login-popup-links">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
-                    </div>
+        <div class="user-navigation">
+          <div class="find">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            </button>
+            <div class="find-popup">
+              <form class="find" id="search-form" action="/" method="get">
+              <input type="text"  placeholder="Что ищем?" />
+              </form>
+            </div>
+          </div> 
+
+          <div class="login"><a class="login-link" href="login.html">Вход</a>
+            <div class="login-popup">
+              <form class="login-form" id="login-form" action="/" method="post">
+                <input type="email" name="email" placeholder="Электронная почта">
+                <input type="password" name="password" placeholder="Пароль">
+                <div class="links-container">
+                  <button class="button button-login" type="button">Войти</button>  
+                  <div class="login-popup-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
                   </div>
-                </form>
-              </div>
-            </li>
-            <li class="basket">
-                <a href="#">2 товара</a>
-                <div class="basket-popup">
-                  <ul class="basket-products">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="basket">
+              <a href="#">2 товара</a>
+              <div class="basket-popup">
+                 <ul class="basket-products">
                     <li>
                       <button></button>
                       <img src="img/product-one.jpg" width="33" height="33" alt="Сливочное">
@@ -70,8 +76,8 @@
                   <p class="total">Итого: 750 руб.</p>
                   <button class="button" type="button">Оформить заказ</button>
                 </div>
-            </li>
-          </ul>
+              </div>
+          </div>
       </nav>
   </header>
 
@@ -217,15 +223,10 @@
       </ul>
         
       <ul class="about-company">
-        <div>
         <li><a href="#">Для поставщиков</a></li>
         <li><a href="#">Наши документы</a></li>
-        </div>
-           
-        <div>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
-       </div>
       </ul>
       
       <div class="footer-copyright">
