@@ -87,8 +87,53 @@
               <li><a  href="gllacy-index.html">Главная</a></li>
               <li><a  href="gllacy-catalog.html">Каталог</a></li>
               <li class="breadcrumbs-current">Сливочное</li>
-          </ul> 
-          <h1>Сливочное мороженное</h1>  
+          </ul>  
+        </section>
+
+        <div class="phone-number">
+          <p>С 10 до 20, ежедневно</p> 
+          <p>8 812 450-25-25</p> 
+        </div>
+
+        <h1>Сливочное мороженное</h1> 
+
+        <section class="filters">
+          <div class="filters-container">
+            <form class="filter" method="get" action="#">
+              <fiedset>
+                <legend>Сортировка:</legend>
+                  <ul>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="popular" id="filter-popular" checked><label for="filter-popular">по популярности</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="price" id="filter-price"checked><label for="filter-price">по цене</label></li>
+                  </ul>
+              </fiedset>
+              <fiedset>
+                <legend>Цена: 100р. - 500р.</legend>
+              </fiedset>
+
+              <fiedset>
+                <legend>Жирность:</legend>
+                  <ul>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"  id="fat-0"><label for="filter-shave">0%</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" checked id="fat-less-than-10"><label for="filter-haircare">до 10%</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="fat-less-than-30"><label for="filter-accessories">до 30%</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="fat-more-than-30"><label for="filter-accessories">выше 30%</label></li>
+                  </ul>
+              </fiedset>
+
+              <fiedset>
+                <legend>Наполнители:</legend>
+                  <ul>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked><label for="filter-chocolate">Шоколадные</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar"checked><label for="filter-sugar">Сахарные присыпки</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="filter-fruits"checked><label for="filter-fruit">Фрукты</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup"><label for="filter-syrup" >Сиропы</label></li>
+                    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam" checked><label for="filter-jam">Джемы</label></li>
+                  </ul>
+              </fiedset>
+              <button type="submit" class="filter-button button">Показать</button>
+            </form>
+          </div>
         </section>
 
         <section class="products">
@@ -202,6 +247,16 @@
                 </div>
               </li>
             </ul>>
+        </section>
+
+        <section class="paginator">
+          <a class="prev disabled" href="#prev">Назад</a>
+          <a class="current" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a class="next" href="#next">Вперёд</a>
         </section>
 
     </main>
