@@ -1,0 +1,27 @@
+.main-header{
+    margin-bottom: 15px;
+}
+.basket a{
+color: #323232;
+background: #FFFFFF;
+}
+.basket-text::before{
+    background-image: url("../img/basket-red.png");
+}
+.basket-text:hover:before{
+    background-image: url("../img/basket-red.png");  
+}
+.breadcrumbs{
+    position:relative;
+}
+.phone-number{
+    position: absolute;
+    top: -20px;
+    right: 27px;
+}
+.product:before{
+    display: none;
+} 
+.footer{
+    border-top: 
+}
