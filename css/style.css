@@ -501,10 +501,10 @@ cursor: pointer;
       
   /*!
     * ===========================================================
-    * BANNERS SECTION
+    * CARDS SECTION
     * ===========================================================
     */
-    .banners{
+    .cards{
       display: flex;
       
       flex-wrap: no-wrap;
@@ -513,14 +513,14 @@ cursor: pointer;
       margin-right: 27px;
       margin-bottom: 35px;
   }
-  .banner{
+  .card{
       width: 50%; 
       border-radius: 20px;
       padding-top: 25px;
       padding-left: 25px;
       text-align: left;
   }
-  .banner h2{
+  .card h2{
       margin: 0;
       padding: 0;
       font-size: 35px;
@@ -528,7 +528,7 @@ cursor: pointer;
       line-height: 41px;
       margin-bottom: 15px;
   }
-  .banner p{
+  .card p{
       margin: 0;
       padding: 0;
       max-width: 512px;
@@ -554,7 +554,7 @@ cursor: pointer;
       background-repeat: no-repeat;
       margin-left: 25px;
   }
-  .banner-button{
+  .cards-button{
       padding: 12px 20px;
   }
   .banner-first, .banner-second{
