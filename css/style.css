@@ -150,6 +150,9 @@ body{
       border-radius: 0;
       padding-left: 18px;
     }
+    .catalog-sub-menu li:hover{
+      padding-left: 2px;
+    }
     .catalog-sub-menu li:first-child{
       padding-top: 12px;
       padding-bottom: 12px;
@@ -161,6 +164,7 @@ body{
     }
     .catalog-sub-menu a:hover{
       background-color: #fbded8;
+      padding-left: 16px;
     }
     .catalog-sub-menu a:active{
       background-color: #f6b5a5;
