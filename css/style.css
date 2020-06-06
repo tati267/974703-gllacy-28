@@ -1216,7 +1216,10 @@ line-height: 18px;
      border-radius: 4px;
      z-index: 20;
      display: block;
-     padding: 20px 15px;
+     }
+     .basket-popup-container{
+      margin: 20px 15px;
+      
      }
     .basket:hover .basket-popup{
       display: block;
@@ -1272,7 +1275,11 @@ max-width: 216px;
     float: right;
     margin-top: 15px;
   }
-
+  .basket-button{
+    position: absolute;
+    bottom: 20px;
+    right: 14px;
+  }
     
     /*!
       * ===========================================================
@@ -1720,11 +1727,17 @@ max-width: 216px;
     font-size: 16px;
     line-height: 18px;
     }
+    .disabled a{
+      pointer-events: none;
+    }
     .pagination a:hover,
     .pagination a:focus{
       background-color: rgba(255, 255, 255, 0.2);
     }
-    
+    .pagination li:last-child:hover a,
+    .pagination a:last-child:focus a{
+      background-color: transparent;
+    }
     .pagination a:active{
       background-color: #ffffff;
       color: #323232;
