@@ -150,9 +150,12 @@ body{
       padding-left: 2px;
     }
     .catalog-sub-menu li:first-child{
+      margin-left: 6px;
+      margin-right: 6px;
       padding-top: 12px;
       padding-bottom: 12px;
-      padding-left: 18px; 
+      padding-left: 12px; 
+      border-bottom: 1px solid rgba(50, 50, 50, 0.2);
     }
     .catalog-sub-menu li:last-child a{
       padding-bottom: 21px;
