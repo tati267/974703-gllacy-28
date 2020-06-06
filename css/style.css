@@ -556,8 +556,23 @@ body{
           bottom: 80px;
           left: 3px;
       }
+      .currency{
+        position: absolute;
+      }
+      .currency:before{
+        position: absolute;
+        content: "";
+          position: absolute;
+          width: 30px;
+          height: 35px;
+          top: 5px;
+          left: 2px;
+          background-image: url("../img/ruble.svg");
+          background-position: 0 0;
+          background-repeat: no-repeat;
+      }
       .weight{
-        
+        margin-left: 35px;
           font-size: 30px;
           font-weight: 700;
           line-height: 45px; 
@@ -1137,63 +1152,107 @@ body{
         .catalog-sub-menu-current a:hover{
           margin-left: 0px;
         }
-        .basket-popup{
-          position: absolute;
-          width: 539px;
-          height: 242px;
-          left: 634px;
-          top: 59px;
-          background: #F8F7F4;
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-         border-radius: 4px;
-      display: none;
-      
-    }
+        .page-current .current{	
+          margin-right: 4px;
+           padding: 10px 15px;
+           color: #ffffff;
+           background-color: #D07058;
+           border-radius: 25px;
+           text-decoration:none;  
+         }
+ .basket .basket-full{
+   background-color: #FFF;
+   color: #323232;
+ }
     .basket-full{
-      position: relative;
-    }
-    .basket-full::before{
-      content: "";
-      position: absolute; 
-      background-image: url("../img/basket-red.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-    .basket-full:hover:before {
-      background-image: url("../img/basket-red.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-  }
-    .basket-text{
       position: relative;
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;
+      background-color: #FFF;
     }
-    .basket-text::before {
+    .basket-full::before {
         content: "";
         position: absolute;
         top: 5px;
         left: 16px;
         width: 21px;
         height: 20px;
-        background-image: url("../img/basket.png");
+        background-image: url("../img/basket-red.png");
         background-repeat: no-repeat;
         background-position: 0 0;
     }
-    .basket-text:hover:before {
-        background-image: url("../img/basket-black.png");
-        background-repeat: no-repeat;
-        background-position: 0 0;
+    .basket{
+      position: relative;
     }
-    .page-current .current{	
-     margin-right: 4px;
-      padding: 10px 15px;
-      color: #ffffff;
-      background-color: #D07058;
-      border-radius: 25px;
-      text-decoration:none;  
-    }
+    .basket-popup{
+      position: absolute;
+      width: 539px;
+      height: 242px;
+      top: 54px;
+      right: 0;
+      background: #F8F7F4;
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+     border-radius: 4px;
+     z-index: 20;
+     display: block;
+     padding: 20px 15px;
+     }
+    .basket:hover .basket-popup{
+      display: block;
+  }
+  .basket-products{
+    border-bottom: 1px solid #CACAC7;
+  }
+  .basket-products p{
+    color: #323232;
+    font-size: 13px;
+line-height: 16px;
+max-width: 216px;
+  }
+  .basket-products li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+    vertical-align: middle;
+  }
+
+  .basket-product-delete{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .basket-product-delete:before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/close-cross-small.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  .basket-products img{
+    margin-left: 30px;
+    margin-right: 13px;
+    border-radius: 50%;
+  }
+  .basket-products p{
+    background-color: blue;
+  }
+  .basket-popup .total{
+    font-size: 15px;
+    line-height: 16px;
+    float: right;
+    margin-top: 15px;
+  }
+
     
     /*!
       * ===========================================================
