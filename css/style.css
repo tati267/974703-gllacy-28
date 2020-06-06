@@ -517,12 +517,13 @@ body{
           padding-left: 25px;
           padding-right: 25px;
           color: #ffffff;
-          margin-bottom: 50px;
+          margin-bottom: 25px;
       }
       .products ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        
       }
       .products li{
           margin: 0;
@@ -622,14 +623,15 @@ body{
           margin-left: 27px;
           margin-right: 27px;
           min-height: 306px;
+          margin-bottom: 40px;
       }
       .seo{
-          
+          max-height: 
           width: 100%;
           text-align: left;
           background-image: url("../img/seo-backgrond.png");
           background-color: transparent;
-          background-position: -11px 0;
+          background-position: 0 0;
           background-repeat: repeat;
           display: flex;
           flex-wrap: wrap;
@@ -651,19 +653,12 @@ body{
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
-      display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        padding-top: 1px;    
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      padding-top: 1px; 
+      padding-bottom: 32px;   
       }
       .text li{  
       color: #3c2f29;
@@ -678,6 +673,7 @@ body{
         margin-top: 20px;
       }
       
+     
       .text li:first-child::before{
           content: "";
           position: absolute;
@@ -733,7 +729,7 @@ body{
           justify-content: space-between;
           margin-left: 27px;
           margin-right: 27px;
-          margin-bottom: 34px;
+          margin-bottom: 40px;
       }
       .card{
         width: 560px; 
@@ -791,11 +787,12 @@ body{
       background-position: 0 0;
       background-repeat: no-repeat;
       padding-left: 15px;
-      padding-top: 25px;
+      padding-top: 20px;
       }
       .news p{
       margin: 0;
       padding: 0;
+      padding-bottom: 5px;
       color: #323232;
       font-size: 16px;
       font-weight: 500;
@@ -819,27 +816,32 @@ body{
     }
     
       .email{
-          width: 47%;
           background: #f8f7f3;
           border: 5px solid transparent;
           border-image-source: url("../img/mail-border.png");
           border-image-slice: 5;
-          padding: 25px 15px;
+          margin-left: 32px;
           border-radius: 20px!important;
       }
       .email p{
           color: #5b5a56;
           margin: 0;
           padding: 0;
+          padding-left: 5px;
+          padding-top: 6px;
           margin-bottom: 40px;
+          font-size: 16px;
+line-height: 22px;
+font-weight: normal;
       }
       .email input{
-          width: 60%;
+        width: 360px;
           height: 44px;
-          padding-left: 15px;
+          padding-left: 20px;
           border-radius: 5px;
           outline: none;
           border: 1px solid rgba(178, 178, 178, 0.52);
+          margin-bottom: 35px;
       }
       .email button{
           margin-left: 5px;
@@ -857,20 +859,33 @@ body{
       }
       .contacts-block{
           background: #ffffff;
-          max-width: 300px;
+          width: 300px;
           position: absolute;
-          top: 50px;
+          top: 60px;
           right: 27px;
           z-index: 1;
-          padding: 25px 25px;
           border-radius: 20px;
+          
+      }
+      .contacts-block-container{
+        margin: 20px;
+        margin-top: 30px;
+        
       }
       .contacts-block-button{
           width: 100%;
+          font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+padding: 10px 0 10px;
+margin-bottom: 20px;
       }
       .contacts-block p{
           margin: 0;
           padding: 0;
+          
           font-size: 14px;
           font-weight: 400;
           line-height: 20px;
@@ -879,7 +894,7 @@ body{
           margin-bottom: 20px;
       }
       .contacts-block p:last-of-type{
-          margin-bottom: 20px;
+          margin-bottom: 30px;
       }
     
       
@@ -939,15 +954,17 @@ body{
       }
       .about-company{
         display: flex;
-        width: 400px;
+        width: 304px;
         height: 50px;
         flex-wrap: wrap;
-        margin-top: 30px; 
+        margin-top: 28px; 
       }
       .about-company li{
         list-style: none;  
           margin: 0;
           padding: 0;
+          font-size: 13px;
+line-height: 18px;
       }
       .about-company a{
         text-decoration: underline;
@@ -972,7 +989,7 @@ body{
         background-position: center;
       }
       .about-company li:nth-child(3) a {
-        margin-right: 45px;
+        margin-right: 42px;
       }
       .about-company a:hover,
       .about-company a:active,
