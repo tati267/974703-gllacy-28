@@ -626,7 +626,6 @@ body{
           margin-bottom: 40px;
       }
       .seo{
-          max-height: 
           width: 100%;
           text-align: left;
           background-image: url("../img/seo-backgrond.png");
@@ -852,10 +851,11 @@ font-weight: normal;
         * MAP SECTION
         * ===========================================================
         */
-      .map{
+      .mymap{
           margin-top: 40px;
           position: relative;
           width: 100%;
+          height: 430px;
       }
       .contacts-block{
           background: #ffffff;
