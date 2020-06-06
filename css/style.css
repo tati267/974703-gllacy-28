@@ -9,10 +9,6 @@ body{
     font-weight: 400;
     line-height: 22px;  
     }
-    .currency {
-    font-family: 'PT Sans', serif;
-    padding-left: 5px;
-    }
     .inner-page{
     max-width: 1200px;
     margin: auto;
@@ -212,7 +208,7 @@ body{
           padding: 22px 13px;
           border-radius: 7px;
           top: 54px;
-          right: 10px;
+          right: 0px;
           position: absolute;
           z-index: 20;
           display: none;
@@ -363,6 +359,7 @@ body{
           background-repeat: no-repeat;
           background-position: 0 0;
       }
+
       /*!
         * ===========================================================
         * SLIDESHOW SECTION
@@ -517,7 +514,7 @@ body{
           padding-left: 25px;
           padding-right: 25px;
           color: #ffffff;
-          margin-bottom: 20px;
+          margin-bottom: 50px;
       }
       .products ul{
         display: flex;
@@ -537,6 +534,7 @@ body{
       .product{
           width: 270px;
           position: relative;
+          
       }
       .product:before{
           content: "";
@@ -559,9 +557,7 @@ body{
           left: 3px;
       }
       .weight{
-          position: absolute;
-          bottom: -20px;
-          left: 120px; 
+        
           font-size: 30px;
           font-weight: 700;
           line-height: 45px; 
@@ -594,11 +590,10 @@ body{
       }
       .product-item-preview:hover .preview{
         display: block;
-        z-index: 20;
       }
       .preview button{
         margin-top: 325px;
-        z-index: 2;
+        z-index: 5;
       }
         /*!
         * ===========================================================
@@ -878,6 +873,8 @@ body{
       .footer{
         margin: 0;
         padding: 0;
+        margin-left: 27px;
+        margin-right: 27px;
         max-width: 1200px;
         min-height: 100px;
         display: flex;
@@ -899,7 +896,6 @@ body{
       height: 39px;
       text-align: center;
       margin-top: 30px;
-      margin-left: 27px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -971,7 +967,6 @@ body{
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;
-        margin-right: 27px;
         margin-top: 15px;
       }
       .footer-copyright-logo{
@@ -1127,21 +1122,72 @@ body{
         bottom: 15px;
         right: 20px;
       }
-     /*!
+/*!
         * ===========================================================
         * CATALOG HEADER SECTION
         * ===========================================================
         */ 
+        
         .catalog-sub-menu-current a{
+          margin-left: 2px;
           background-color: #D07058;
           color: #ffffff;
           text-decoration:none; 
         }
+        .catalog-sub-menu-current a:hover{
+          margin-left: 0px;
+        }
         .basket-popup{
+          position: absolute;
+          width: 539px;
+          height: 242px;
+          left: 634px;
+          top: 59px;
+          background: #F8F7F4;
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+         border-radius: 4px;
       display: none;
+      
+    }
+    .basket-full{
+      position: relative;
+    }
+    .basket-full::before{
+      content: "";
+      position: absolute; 
+      background-image: url("../img/basket-red.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    .basket-full:hover:before {
+      background-image: url("../img/basket-red.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+  }
+    .basket-text{
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    .basket-text::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 16px;
+        width: 21px;
+        height: 20px;
+        background-image: url("../img/basket.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .basket-text:hover:before {
+        background-image: url("../img/basket-black.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
     }
     .page-current .current{	
-      margin-top: 14px;
+     margin-right: 4px;
       padding: 10px 15px;
       color: #ffffff;
       background-color: #D07058;
@@ -1154,92 +1200,95 @@ body{
       * CATALOG BREADCRUMBS SECTION
       * ===========================================================
       */ 
-    .breadcrumbs{
-      list-style: none;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left:10px;
-      }
-    .breadcrumbs li{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 16px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-    .breadcrumbs a{
-      padding: 0;
-      margin: 0;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 16px;
-      text-decoration: underline;
-    }
-    .breadcrumbs a:hover,
-    .breadcrumbs a:focus{
-      text-decoration: none;	
-    }
-    .breadcrumbs-current{
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 16px;
-      margin-left: 15px;
-    }
-    .breadcrumbs-current::after{
-      display:none;	
-    }
-    
-    .breadcrumbs li:first-child,
-    .breadcrumbs li:nth-child(2) {
+      .breadcrumbs{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left:10px;
         position: relative;
-    }
-    
-    .breadcrumbs li:first-child::after,
-    .breadcrumbs li:nth-child(2)::after {
-        content: "»";
-        position: absolute;
-        right: -15px;
-    }
-    
-    .breadcrumbs a,
-    .breadcrumbs li {
+        margin-right: 27px;
+        }
+      .breadcrumbs li{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      .breadcrumbs a{
+        padding: 0;
+        margin: 0;
         color: #ffffff;
         font-size: 14px;
-        line-height: 16px;
         font-weight: 400;
-    }
-    
-    .breadcrumbs a {
+        line-height: 16px;
         text-decoration: underline;
-        -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
-        text-decoration-color: rgba(255, 255, 255, 0.2);
-    }
-    
-    .breadcrumbs a:hover,
-    .breadcrumbs a:focus,
-    .breadcrumbs a:active {
-        color: #ffbc9e;
-        -webkit-text-decoration-color:  rgba(255, 188, 158, 0.3);
-                text-decoration-color:  rgba(255, 188, 158, 0.3);
-    }
-    .container h1{
-      margin: 0;
-      padding: 0;
-      font-weight: bold;
-    font-size: 35px;
-    line-height: 41px;
-    color: #FFFFFF;
-    margin-top: -15px;
-    margin-left: 27px;
-    margin-bottom: 25px;
-    }
+      }
+      .breadcrumbs a:hover,
+      .breadcrumbs a:focus{
+        text-decoration: none;	
+      }
+      .breadcrumbs-current{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-left: 15px;
+      }
+      .breadcrumbs-current::after{
+        display:none;	
+      }
+      
+      .breadcrumbs li:first-child,
+      .breadcrumbs li:nth-child(2) {
+          position: relative;
+      }
+      
+      .breadcrumbs li:first-child::after,
+      .breadcrumbs li:nth-child(2)::after {
+          content: "»";
+          position: absolute;
+          right: -15px;
+      }
+      
+      .breadcrumbs a,
+      .breadcrumbs li {
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+      }
+      
+      .breadcrumbs a {
+          text-decoration: underline;
+          -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
+          text-decoration-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      .breadcrumbs a:hover,
+      .breadcrumbs a:focus,
+      .breadcrumbs a:active {
+          color: #ffbc9e;
+          -webkit-text-decoration-color:  rgba(255, 188, 158, 0.3);
+                  text-decoration-color:  rgba(255, 188, 158, 0.3);
+      }
+      .container-catalog h1{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      font-size: 35px;
+      line-height: 41px;
+      color: #FFFFFF;
+      margin-top: -15px;
+      margin-left: 27px;
+      margin-bottom: 25px;
+      }
+  
     /*!
       * ===========================================================
       * CATALOG FILTERS SECTION
@@ -1293,6 +1342,7 @@ body{
         margin-bottom: 40px;
         padding-left: 27px;
         padding-right: 27px;
+       
       }
       
       .catalog-filter label,
@@ -1566,7 +1616,8 @@ body{
       */
     .paginator{
       padding-right: 27px;
-      
+      margin-bottom: 20px;
+
       text-align: right;
     }
     .pagination ul, li, a {
@@ -1603,3 +1654,7 @@ body{
       background-color: #ffffff;
       color: #323232;
     }
+    .footer-catalog{
+     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
