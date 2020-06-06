@@ -10,8 +10,8 @@
              });
             
              myPlacemark = new ymaps.Placemark([55.75399400, 37.62209300], {
-                 hintContent: 'Собственный значок метки',
-                 balloonContent: 'Это красивая метка'
+                 hintContent: 'Gllacy',
+                 balloonContent: 'г. Санкт-Петербург, ул. Большая Конюшенная 19/8'
              }),
      
              myMap.geoObjects.add(myPlacemark);
