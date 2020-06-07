@@ -68,9 +68,7 @@ body {
   max-width: 1200px;
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
-  padding-right: 27px;
-  padding-left: 27px;
+  padding: 5px 27px 10px 27px;
 }  
 
 .main-navigation {
@@ -87,6 +85,9 @@ body {
   line-height: 18px;
 }  
 
+.user-navigation{
+  margin: 14px 0px;
+}
 .site-navigation li {
   list-style: none;  
 }  
@@ -209,7 +210,6 @@ body {
 
 .find {
   position: relative;
-  margin: 14px 0px;
 }  
 
 .find button { 
@@ -265,7 +265,7 @@ body {
 
  .login {
   position: relative;
-  margin: 14px 10px;
+  margin: 0 10px;
 }  
 
  .login-link {	
@@ -378,7 +378,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  margin: 14px 0px;
 }  
 
 .basket a {
