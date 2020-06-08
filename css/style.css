@@ -1358,7 +1358,7 @@ textarea {
 } 
 
 .basket-popup-container {
-  margin: 20px 15px;
+  margin: 25px 14px 20px 14px;
 } 
 
 .basket:hover .basket-popup {
@@ -1384,7 +1384,7 @@ textarea {
   vertical-align: middle;
 }  
 
-.basket-product-delete {
+.basket-button-delete {
   position: absolute;
   top: 4px;
   left: 5px;
@@ -1396,7 +1396,7 @@ textarea {
   cursor: pointer;
 }
 
-.basket-product-delete:before {
+.basket-button-delete:before {
   content: "";
   position: absolute;
   width: 11px;
@@ -1412,21 +1412,28 @@ textarea {
   border-radius: 50%;
 }  
 
-.basket-products p {
-  background-color: blue;
+.weight-price {
+  padding-left: 25px;
 } 
 
-.basket-popup .total {
+.final-price{
+  padding-left: 25px;
+}
+
+.price-for-kg{
+  color: #a0a09f;
+}
+
+.total {
   font-size: 15px;
   line-height: 16px;
-  float: right;
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
 } 
 
 .basket-button {
-  position: absolute;
-  bottom: 20px;
-  right: 14px;
+ float: right;
 }  
    
    /*!
