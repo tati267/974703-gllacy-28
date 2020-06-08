@@ -140,12 +140,13 @@ body {
 .catalog-sub-menu {
   position: absolute;
   color: #000000;
-  top: 60px;
+  top: 40px;
   left: -3px;
   z-index: 10;
   display: none;
-  width: 177px;
-  height: 208px;
+  width: 143px;
+  height: 171px;
+  padding: 10px 0 10px 0;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #ffffff;;
   border-radius: 5px;
@@ -156,33 +157,39 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 10px 20px 10px 21px;
   border-radius: 0;
-  padding-left: 18px;
-}  
-
-.catalog-sub-menu li:hover {
-  padding-left: 2px;
 }  
 
 .catalog-sub-menu li:first-child {
-  margin-left: 6px;
-  margin-right: 6px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px; 
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-}  
+  padding: 0 20px 10px 21px;
+}
+
+.catalog-sub-menu li:first-child{
+  position: relative;
+}
+
+.catalog-sub-menu li:first-child:before{
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 7px;
+  width: 128px;
+  height: 1px;
+  background-image: url("../img/catalog-line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .catalog-sub-menu li:last-child a {
-  padding-bottom: 17px;
+  padding-bottom: 18px;
   border-radius:  0 0 5px 5px;
 }  
 
 .catalog-sub-menu a:hover {
+  margin-left: 2px;
+  padding-left: 19px;
   background-color: #fbded8;
-  padding-left: 16px;
 }  
 
 .catalog-sub-menu a:active {
@@ -238,7 +245,7 @@ body {
   background-color: #ffffff;;
   padding: 22px 13px;
   border-radius: 7px;
-  top: 54px;
+  top: 35px;
   right: 0px;
   position: absolute;
   z-index: 20;
@@ -311,8 +318,8 @@ body {
   border-radius: 7px;
   position: absolute;
   display: none;
-  top: 54px;
-  right: 10px;
+  top: 37px;
+  right: 0px;
   z-index: 20;
 }
 
@@ -634,8 +641,8 @@ body {
   font-weight: 700;
   line-height: 45px;
   position: absolute;
-  bottom: 80px;
-  left: 3px;
+  bottom: 85px;
+  left: 0px;
 }
 
 .currency {
@@ -663,7 +670,7 @@ body {
 }
 
 .product-item h3 {
-  margin-top: 12px;
+  margin-top: 8px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -711,7 +718,7 @@ body {
 }
 
 .seo {
-  padding: 24px 23px 35px 20px;
+  padding: 24px 23px 30px 20px;
   text-align: left;
   background-image: url("../img/seo-backgrond.png");
   background-color: transparent;
@@ -735,7 +742,7 @@ body {
 .text {
   margin: 0;
   padding: 0;
-  padding-left: 50px;
+  padding-left: 53px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;   
@@ -759,7 +766,7 @@ body {
   width: 49px;
   height: 49px;
   left: -55px;
-  top: 0px;
+  top: 5px;
   background-image: url("../img/icecream.svg");
   background-repeat: no-repeat;
   background-position: 0 0px;
@@ -770,7 +777,7 @@ body {
   width: 49px;
   height: 49px;
   left: -55px;
-  top: -10px;
+  top: 5px;
   background-image: url("../img/cow.svg");
   background-position: 0 0;
   background-repeat: no-repeat;   
@@ -782,7 +789,7 @@ body {
   width: 49px;
   height: 49px;
   left: -55px;
-  top: -10px;
+  top: 6px;
   background-image: url("../img/leaf.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -794,7 +801,7 @@ body {
   width: 49px;
   height: 49px;
   left: -55px;
-  top: -10px;
+  top: 6px;
   background-image: url("../img/termo.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -864,6 +871,9 @@ body {
 
 .card-button {
   float: right;
+  padding-left: 22px;
+  padding-right: 22px;
+
 }
 
 .news {
@@ -931,7 +941,6 @@ body {
   border-radius: 5px;
   outline: none;
   border: 1px solid rgba(178, 178, 178, 0.52);
-  margin-bottom: 35px;
 }
 
 .email button {
