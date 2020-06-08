@@ -75,8 +75,8 @@ body {
   margin-left: 10px;
 }  
 
-.site-navigation, .user-navigation {
-  margin: 10px 0;
+.site-navigation{
+  margin: 12px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap; 
@@ -85,9 +85,6 @@ body {
   line-height: 18px;
 }  
 
-.user-navigation{
-  margin: 14px 0px;
-}
 .site-navigation li {
   list-style: none;  
 }  
@@ -197,10 +194,14 @@ body {
 }  
 
 .user-navigation {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; 
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  margin-left: auto;  
+  margin: 15px 0px;
+  margin-left: auto; 
 }  
 
 .user-navigation a:hover {
@@ -213,7 +214,7 @@ body {
 }  
 
 .find button { 
-  padding: 6px 6px;
+  padding: 6px 7px;
   border-radius: 25px; 
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
@@ -242,7 +243,7 @@ body {
   position: absolute;
   z-index: 20;
   display: none;
- }
+}
 
 .find-popup input {
   margin: 0;
@@ -259,17 +260,17 @@ body {
   outline: none;
 }  
 
- .find:hover .find-popup {
+.find:hover .find-popup {
   display: block;
 }  
 
- .login {
+.login {
   position: relative;
   margin: 0 10px;
 }  
 
- .login-link {	
-  padding: 7px 16px 8px 45px;
+.login-link {	
+  padding: 9px 16px 9px 45px;
   position: relative;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -418,14 +419,14 @@ body {
   margin-right: 27px;
   min-height: 540px;
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .phone-number {
   max-width: 168px;
   position: absolute;
   text-align: right;
-  top: 0px;
+  top: -6px;
   right: 0;
 }  
 
@@ -474,7 +475,7 @@ body {
   width: 900px;
   margin-left: 27px;
   position: absolute;
-  top: 320px;
+  top: 310px;
   left: 100px;
   margin: 0 auto;
   padding: 0 20px;
@@ -509,7 +510,6 @@ body {
 
 .slider-button {
   margin-left: auto;
-  margin-top: 0px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -517,9 +517,8 @@ body {
   
 .slider-controls {
   position: absolute;
-  bottom: 20px;
   left: 0;
-  bottom: 29px;
+  bottom: 34px;
   z-index: 20;
   font-size: 0;
 }  
@@ -712,7 +711,7 @@ body {
 }
 
 .seo {
-  width: 100%;
+  padding: 24px 23px 35px 20px;
   text-align: left;
   background-image: url("../img/seo-backgrond.png");
   background-color: transparent;
@@ -726,8 +725,6 @@ body {
 
 .seo h2 {
   margin: 0;
-  margin-top: 20px;
-  margin-left: 20px;
   padding: 0;
   width: 100%;
   font-size: 24px;
@@ -738,13 +735,10 @@ body {
 .text {
   margin: 0;
   padding: 0;
+  padding-left: 50px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  padding-top: 1px; 
-  padding-bottom: 32px;  
+  flex-wrap: wrap;   
 }
 
 .text li {  
@@ -756,18 +750,16 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  margin-left: 80px;
-  margin-top: 20px;
+  padding-top: 20px;
  }
- 
-  
+
  .text li:first-child::before {
   content: "";
   position: absolute;
   width: 49px;
   height: 49px;
   left: -55px;
-  top: -10px;
+  top: 0px;
   background-image: url("../img/icecream.svg");
   background-repeat: no-repeat;
   background-position: 0 0px;
@@ -1007,8 +999,7 @@ body {
 .footer {
   margin: 0;
   padding: 0;
-  margin-left: 27px;
-  margin-right: 27px;
+  padding:0 27px;
   max-width: 1200px;
   min-height: 100px;
   display: flex;
@@ -1031,7 +1022,7 @@ body {
   width: 185px;
   height: 39px;
   text-align: center;
-  margin-top: 30px;
+  margin: auto 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
