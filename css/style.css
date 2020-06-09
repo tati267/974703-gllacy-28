@@ -1444,12 +1444,8 @@ textarea {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left:10px;
+  padding: 5px 0 3px 0;
   position: relative;
-  margin-right: 27px;
 }  
 
 .breadcrumbs li {
@@ -1459,6 +1455,10 @@ textarea {
   margin-left: 10px;
   margin-right: 10px;
 } 
+
+.breadcrumbs li:first-child{
+  margin-left: 0px;
+}
 
 .breadcrumbs a {
   padding: 0;
@@ -1528,8 +1528,6 @@ textarea {
   font-size: 35px;
   line-height: 41px;
   color: #FFFFFF;
-  margin-top: -15px;
-  margin-left: 27px;
   margin-bottom: 25px;
 }
    /*!
@@ -1549,8 +1547,6 @@ legend {
 
 .catalog-filter {
   margin-bottom: 40px;
-  padding-left: 27px;
-  padding-right: 27px;
 }
  
 .catalog-filter label,
@@ -1590,7 +1586,7 @@ legend {
   padding-left: 15px;
   outline: none;
 }
- 
+
 .select option{
   color: #323232;
 }
@@ -1632,6 +1628,7 @@ legend {
  * CATALOG FILTERS - filter price SECTION
  * ===========================================================
  */
+
  .range-controls {
   position: relative;
   width: 218px;
@@ -1646,6 +1643,7 @@ legend {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
+  position: relative;
 }
  
 .range-line-selected {
@@ -1660,7 +1658,7 @@ legend {
  
 .toggle {
   position: absolute;
-  top: 0px;
+  top: 7px;
   left: -8px;
   width: 4px;
   height: 4px;
@@ -1671,11 +1669,11 @@ legend {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 35px;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 130px;
 }
 
     /*!
@@ -1722,22 +1720,24 @@ legend {
 .fat-filter label::before {
   content: "";
   position: absolute;
+  top: 6px;
   left: -30px;
-  width: 22px;
-  height: 22px;
-  border: 5px solid #eef2f0;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #eef2f0;
   border-radius: 50%;
 }
  
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  left: -22px;
-  top: 15px;
-  width: 6px;
-  height: 6px;
-  border: 3px solid #eef2f0;
-  border-radius: 50%;
+  left: -23px;
+  top: 13px;
+  width: 8px;
+  height: 8px;
+  background-image: url("../img/dot.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
      /*!
  * ===========================================================
@@ -1750,11 +1750,21 @@ legend {
   border-radius: 15px;
 }
  
-.filler-filter li {
+.filler-filter label {
   position: relative;
+}
+
+.filter-option{
   padding-top: 8px;
 }
  
+.filter-option label {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
 .filler-filter label {
   padding-left: 11px;
 }
@@ -1767,46 +1777,32 @@ legend {
   margin-right: 18px;
 }
  
-.filter-input-checkbox:not(:checked) + label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -20px;
   width: 20px;
   height: 20px;
-  border: 2px solid #eef2f0;
-  border-radius: 2px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
  
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   left: -22px;
-  top: 7px;
+  top: -2px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: center;
 }
- 
-.filter-input-checkbox:checked + label:hover::after,
-.filter-input-checkbox:checked + label:focus::after,
-.filter-input-checkbox:checked:focus + label::after {
-  background-image: url("../img/checkbox-off.svg");
-}
- 
-.filter-input-checkbox:disabled + label::after,
-.filter-input-checkbox:disabled + label:hover::after,
-.filter-input-checkbox:disabled + label:active::after {
-  background-image: url("../img/checkbox-on-d.svg");
-}
- 
-.filter-option label {
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-}
+
+.filter-input:disabled label{
+  opacity: 0.2;
+  }
  
 .catalog-filter fieldset {
   border: none;
