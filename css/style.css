@@ -866,6 +866,7 @@ body {
   position: relative;
 }
 
+
 .card-button {
   float: right;
   padding-left: 22px;
@@ -955,6 +956,10 @@ body {
   position: relative;
   width: 100%;
   height: 430px;
+}
+
+.map iframe{
+  border: 0;
 }
 
 .contacts-block {
