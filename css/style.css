@@ -4,7 +4,6 @@ body {
   padding: 0;
   color: #000000;
   font-family: "Roboto", arial, sans-serif;
-  font-style: bold;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;  
@@ -109,7 +108,6 @@ body {
  
 .site-navigation .site-navigation-item {
   text-decoration: underline;
-  -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }  
 
@@ -603,7 +601,7 @@ body {
   padding: 0;
   list-style: none;
   display: inline-block;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .product-item {
@@ -667,14 +665,13 @@ body {
 }
 
 .product-item h3 {
-  margin-top: 8px;
+  padding-top: 8px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px; 
   color: #ffffff;
   text-decoration: underline;
-  -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
   text-decoration-color: rgba(255, 255, 255, 0.2); 
 }
 
@@ -929,10 +926,7 @@ body {
 .email p {
   color: #5b5a56;
   margin: 0;
-  padding: 0;
-  padding-left: 5px;
-  padding-top: 6px;
-  margin-bottom: 40px;
+  padding-top: 6px 0 40px 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -1102,12 +1096,11 @@ body {
 
 .about-company a {
   text-decoration: underline;
-  -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
  
 .about-company li:first-child a {
-  margin-right: 30px;
+  padding-right: 30px;
   font-weight: 700;
   position: relative;
 }
@@ -1125,7 +1118,7 @@ body {
 }
 
 .about-company li:nth-child(3) a {
-  margin-right: 42px;
+  padding-right: 42px;
 }
 
 .about-company a:hover,
