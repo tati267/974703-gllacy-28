@@ -1012,7 +1012,7 @@ body {
 }
 
 .contacts-block p:last-of-type {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .contacts-address b{
   font-weight: bold;
@@ -1177,7 +1177,7 @@ body {
   padding-bottom: 27px;
   width: 477px;
   height: 441px;
-  background-color: #ffffff;;
+  background: #F8F7F4;
   border-radius: 10px;
   z-index: 11;
   margin-left: -230px;
@@ -1311,7 +1311,7 @@ textarea {
   
 .popup button {
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
   right: 20px;
 }
 /*!
