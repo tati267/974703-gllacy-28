@@ -7,18 +7,24 @@ var slidercontrols = document.querySelector(".slider-controls");
 
 btn1.addEventListener("click", function (evt) {
   evt.preventDefault();
+  sitewrapper.classList.remove("site-wrapper-2");
+  sitewrapper.classList.remove("site-wrapper-3");
   sitewrapper.classList.add("site-wrapper-1");
   slidercontrols.classList.add("current");
 });
 
 btn2.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sitewrapper.classList.add("site-wrapper-2");
+  sitewrapper.classList.remove("site-wrapper-1");
+  sitewrapper.classList.remove("site-wrapper-3");
   slidercontrols.classList.add("current");
+  sitewrapper.classList.add("site-wrapper-2");
 });
 
 btn3.addEventListener("click", function (evt) {
   evt.preventDefault();
+  sitewrapper.classList.remove("site-wrapper-1");
+  sitewrapper.classList.remove("site-wrapper-2");
   sitewrapper.classList.add("site-wrapper-3");
   slidercontrols.classList.add("current");
 });
