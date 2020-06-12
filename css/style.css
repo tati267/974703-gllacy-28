@@ -1029,11 +1029,12 @@ body {
   padding: 0;
   max-width: 1200px;
   min-height: 100px;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   color: #ffffff;
+  display: grid;
+  grid-template-columns: 185px 304px 190px;
 }
 
 .footer-social li, ul, a, .about-company li,a {
@@ -1046,8 +1047,7 @@ body {
 
 .footer-social {
   margin: 0;
-  width: 185px;
-  height: 39px;
+  min-height: 39px;
   text-align: center;
   margin: auto 0;
   display: flex;
@@ -1080,10 +1080,9 @@ body {
 
 .about-company {
   display: flex;
-  width: 304px;
   height: 50px;
   flex-wrap: wrap;
-  margin-top: 28px; 
+  margin: auto 0; 
 }
 
 .about-company li {
@@ -1128,7 +1127,6 @@ body {
 }
 
 .footer-copyright {
-  width: 190px;
   height: 60px;
   font-size: 12px;
   font-weight: 400;
