@@ -376,7 +376,7 @@ body {
 .login-popup-links a:active,
 .login-popup-links a:focus {
   color: #e84d37;
-  -webkit-text-decoration-color: rgba(232, 77, 55, 0.302);
+  background-color: transparent;
 	text-decoration-color: rgba(232, 77, 55, 0.302);
 }  
 
@@ -1317,7 +1317,7 @@ textarea {
 } 
 
 .catalog-sub-menu-current a:hover {
-  margin-left: 0px;
+  margin-left: 2px;
 }
 
 .page-current .current {	
@@ -1870,10 +1870,6 @@ button.filter-button {
  button.filter-button:focus {
   background-color: #fbfcfb;
   color: #323232;
-}
-
-.filter-option input{
-  cursor: pointer;
 }
    
    /*!
