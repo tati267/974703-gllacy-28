@@ -442,18 +442,38 @@ body {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper-1 {
+.site-wrapper-catalog {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  color: #000000;
   background-color: #849d8f;
-  background-image: url("../img/slider-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper-ice1 {
+  background-color: #849d8f;
 }
 
 .site-wrapper-2 {
   background-color: #8996a6;
-  background-image: url("../img/slider-2.png");
 }
 
 .site-wrapper-3 {
   background-color: #9d8b84;
+}
+
+.site-wrapper-ice1 {
+  background-image: url("../img/slider-1.png");
+}
+
+.site-wrapper-ice2 {
+  background-image: url("../img/slider-2.png");
+}
+
+.site-wrapper-ice3 {
   background-image: url("../img/slider-3.png");
 }
 
@@ -539,10 +559,10 @@ body {
 }
 
 .phone-number {
-  max-width: 168px;
+  width: 168px;
   position: absolute;
   text-align: right;
-  top: -6px;
+  top: 50px;
   right: 0;
 }  
 
@@ -675,7 +695,7 @@ body {
 }
 
 .preview button {
-  margin-top: 325px;
+  margin-top: 335px;
   z-index: 2;
 }
 
