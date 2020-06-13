@@ -1871,6 +1871,10 @@ button.filter-button {
   background-color: #fbfcfb;
   color: #323232;
 }
+
+.filter-option input{
+  cursor: pointer;
+}
    
    /*!
  * ===========================================================
