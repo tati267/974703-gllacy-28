@@ -7,8 +7,6 @@ var textSlider2 = document.querySelector("#slider2");
 var textSlider3 = document.querySelector("#slider3");
 var siteWrapper = document.querySelector(".site-wrapper");
 
-
-
 btn1.addEventListener("click", function (evt) {
   evt.preventDefault();
   siteWrapper.classList.remove("site-wrapper-2");
