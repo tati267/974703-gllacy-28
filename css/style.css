@@ -536,7 +536,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 34px;
-  z-index: 20;
+  z-index: 9;
   font-size: 0;
 }  
 
