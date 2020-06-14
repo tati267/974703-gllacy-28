@@ -516,8 +516,8 @@ body {
 
  .slider-title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 28px;  
+  margin: 0 auto; 
+  padding-bottom: 30px; 
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
@@ -542,8 +542,8 @@ body {
 
 .slider-controls button {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   margin-right: 8px;
   vertical-align: top;
   background-color: transparent;
@@ -607,7 +607,7 @@ body {
   padding: 0;
   list-style: none;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .product-item {
@@ -642,7 +642,7 @@ body {
   font-weight: 700;
   line-height: 45px;
   position: absolute;
-  bottom: 110px;
+  bottom: 62px;
   left: 0px;
 }
 
@@ -671,7 +671,9 @@ body {
 }
 
 .product-item h3 {
+  padding: 0;
   padding-top: 8px;
+  margin: 0;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -900,6 +902,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  width: 100%;
 }
 
 .news a {
@@ -926,13 +929,12 @@ body {
   border-image-source: url("../img/mail-border.png");
   border-image-slice: 5;
   margin-left: 32px;
-  border-radius: 20px!important;
 }
 
 .email p {
   color: #5b5a56;
   margin: 0;
-  padding-top: 6px 0 40px 5px;
+  padding: 15px 0 40px 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -945,6 +947,7 @@ body {
   border-radius: 5px;
   outline: none;
   border: 1px solid rgba(178, 178, 178, 0.52);
+  margin-bottom: 5px;
 }
 
 .email button {
@@ -1033,7 +1036,7 @@ body {
 .footer {
   margin: 0;
   padding: 0;
-  max-width: 1200px;
+  padding-top: 10px;
   min-height: 100px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1137,7 +1140,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .footer-copyright-logo {
@@ -1878,7 +1881,7 @@ button.filter-button {
  */
 .paginator {
   padding-top: 47px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
   text-align: right;
 }  
 
@@ -1896,7 +1899,7 @@ button.filter-button {
 }
 
 .pagination li:first-child {
-  margin-right: 15px;
+  margin: 0;
   padding: 0;
 }
 
