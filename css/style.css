@@ -129,7 +129,7 @@ body {
   background: #EDEDED;
 }  
 
-.site-navigation > li .site-navigation-item {
+.site-navigation > li {
   position: relative;
 }  
 
@@ -143,8 +143,8 @@ body {
 .catalog-sub-menu {
   position: absolute;
   color: #000000;
-  top: 60px;
-  left: 155px;
+  top: 42px;
+  left: 0px;
   z-index: 10;
   display: none;
   width: 143px;
@@ -464,26 +464,12 @@ body {
 
 .site-wrapper-2 {
   background-color: #8996a6;
- 
   background-image: url("../img/slider-2.png");
 }
 
 .site-wrapper-3 {
   background-color: #9d8b84;
   background-image: url("../img/slider-2.png");
-
-}
-
-.site-wrapper-ice1 {
-  background-image: url("../img/slider-1.png");
-}
-
-.site-wrapper-ice2 {
-  background-image: url("../img/slider-2.png");
-}
-
-.site-wrapper-ice3 {
-  background-image: url("../img/slider-3.png");
 }
 
 .slider-container {

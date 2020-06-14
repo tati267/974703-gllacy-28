@@ -2,48 +2,50 @@
 var btn1 = document.querySelector("#btn1");
 var btn2 = document.querySelector("#btn2");
 var btn3 = document.querySelector("#btn3");
-var sitewrapper = document.querySelector(".site-wrapper");
-var slidershow = document.querySelector(".slider-show");
-var slidercontrols = document.querySelector(".slider-controls");
+var textSlider1 = document.querySelector("#slider1");
+var textSlider2 = document.querySelector("#slider2");
+var textSlider3 = document.querySelector("#slider3");
+var siteWrapper = document.querySelector(".site-wrapper");
+
 
 
 btn1.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slidershow.classList.remove("site-wrapper-2");
-  slidershow.classList.remove("site-wrapper-3");
-  sitewrapper.classList.add("site-wrapper-1");
-  sitewrapper.classList.remove("site-wrapper-ice2");
-  sitewrapper.classList.remove("site-wrapper-ice3");
-  sitewrapper.classList.add("site-wrapper-ice1");
+  siteWrapper.classList.remove("site-wrapper-2");
+  siteWrapper.classList.remove("site-wrapper-3");
+  siteWrapper.classList.add("site-wrapper-1");
   btn2.classList.remove("current");
   btn3.classList.remove("current");
   btn1.classList.add("current");
+  textSlider2.classList.remove("slider-current");
+  textSlider3.classList.remove("slider-current");
+  textSlider1.classList.add("slider-current");
 });
 
 btn2.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sitewrapper.classList.remove("site-wrapper-1");
-  sitewrapper.classList.remove("site-wrapper-3");
-  sitewrapper.classList.add("site-wrapper-2");
-  sitewrapper.classList.remove("site-wrapper-ice1");
-  sitewrapper.classList.remove("site-wrapper-ice3");
-  sitewrapper.classList.add("site-wrapper-ice2");
+  siteWrapper.classList.remove("site-wrapper-1");
+  siteWrapper.classList.remove("site-wrapper-3");
+  siteWrapper.classList.add("site-wrapper-2");
   btn1.classList.remove("current");
   btn3.classList.remove("current");
   btn2.classList.add("current");
+  textSlider1.classList.remove("slider-current");
+  textSlider3.classList.remove("slider-current");
+  textSlider2.classList.add("slider-current");
 });
 
 btn3.addEventListener("click", function (evt) {
   evt.preventDefault();
-  sitewrapper.classList.remove("site-wrapper-1");
-  sitewrapper.classList.remove("site-wrapper-2");
-  sitewrapper.classList.add("site-wrapper-3");
-  sitewrapper.classList.remove("site-wrapper-ice1");
-  sitewrapper.classList.remove("site-wrapper-ice2");
-  sitewrapper.classList.add("site-wrapper-ice3");
+  siteWrapper.classList.remove("site-wrapper-1");
+  siteWrapper.classList.remove("site-wrapper-2");
+  siteWrapper.classList.add("site-wrapper-3");
   btn1.classList.remove("current");
   btn2.classList.remove("current");
   btn3.classList.add("current");
+  textSlider1.classList.remove("slider-current");
+  textSlider2.classList.remove("slider-current");
+  textSlider3.classList.add("slider-current");
 });
 
 
