@@ -202,8 +202,7 @@ body {
   background-color: #f6b5a5;
 }  
    
-.site-navigation > li:hover .catalog-sub-menu,
-.site-navigation > li:hover .container-sub-menu {
+.site-navigation > li:hover .catalog-sub-menu {
   display: block;
 }  
 
@@ -428,7 +427,7 @@ body {
   position: absolute;
   top: 38px;
   left: 5px;
-  display: none;
+  display: block;
   width: 80px;
   height: 10px;
   background-color: transparent;
@@ -442,6 +441,18 @@ body {
   z-index: 9;
   display: block;
   width: 30px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.container-login-popup{
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 5px;
+  z-index: 9;
+  display: block;
+  width: 80px;
   height: 10px;
   background-color: transparent;
 }
@@ -1232,7 +1243,6 @@ body {
 .popup label {
   color: rgb(153, 153, 153);
   text-align: left;
-  position: absolute; 
   color: #92c1f1;
   font-size: 12px;
   line-height: 24px;
@@ -1252,7 +1262,7 @@ body {
 }
 
 #user-message {
-  width: 405px;
+  width: 100%;
   height: 150px;
 }
 
@@ -1266,11 +1276,10 @@ body {
   left: 15px;
 }
 
-.feedback-form
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-input[type=password]::placeholder,
-textarea {
+.feedback-form input[type=text]::placeholder,
+.feedback-form input[type=email]::placeholder,
+.feedback-form input[type=password]::placeholder,
+.feedback-form textarea {
   color: #999999;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -1278,10 +1287,10 @@ textarea {
   font-weight: 400;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-textarea {
+.feedback-form input[type=text],
+.feedback-form input[type=email],
+.feedback-form input[type=password],
+.feedback-form textarea {
   padding-left: 15px;
   color: #000000;
 }
