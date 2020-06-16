@@ -140,23 +140,11 @@ body {
   list-style: none;
 }  
 
-.container-sub-menu{
-  margin: 0;
-  position: absolute;
-  top: 38px;
-  left: 5px;
-  z-index: 9;
-  display: none;
-  width: 80px;
-  height: 20px;
-  background-color: transparent;
-}
-
 .catalog-sub-menu {
   position: absolute;
   color: #000000;
-  top: 6px;
-  left: -10px;
+  top: 44px;
+  left: -9px;
   z-index: 10;
   display: none;
   width: 143px;
@@ -166,7 +154,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
 }  
-  
+
 .catalog-sub-menu a {
   color: #000000;
   font-size: 14px;
@@ -237,7 +225,7 @@ body {
 
 .find {
   position: relative;
-}  
+} 
 
 .find button { 
   padding: 6px 7px;
@@ -435,6 +423,28 @@ body {
   background-position: 0 0;
 }  
 
+.container-sub-menu{
+  margin: 0;
+  position: absolute;
+  top: 38px;
+  left: 5px;
+  display: none;
+  width: 80px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.container-find-popup{
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  z-index: 9;
+  display: block;
+  width: 30px;
+  height: 10px;
+  background-color: transparent;
+}
  /*!
   * ===========================================================
   * SLIDESHOW SECTION
@@ -571,6 +581,7 @@ body {
   text-align: right;
   top: 50px;
   right: 0;
+  z-index: 19;
 }  
 
 .phone-number p {
