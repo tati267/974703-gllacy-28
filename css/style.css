@@ -147,8 +147,7 @@ body {
   left: -9px;
   z-index: 10;
   display: none;
-  width: 143px;
-  height: 171px;
+  width: 146px;
   padding: 10px 0 0 0;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #ffffff;
@@ -156,11 +155,12 @@ body {
 }  
 
 .catalog-sub-menu a {
+  margin: 0 0 0 -2px;
+  padding: 10px 20px 10px 21px;
   color: #000000;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  padding: 10px 20px 10px 21px;
   border-radius: 0;
 }  
 
@@ -192,9 +192,7 @@ body {
   border-radius:  0 0 5px 5px;
 }
 
-.catalog-sub-menu a:hover {
-  margin-left: 2px;
-  padding-left: 19px;
+.catalog-sub-menu li:hover a{
   background-color: #fbded8;
 }  
 
@@ -1221,7 +1219,7 @@ body {
   padding: 15px 25px 27px 25px;
   width: 477px;
   background: #F8F7F4;
-  border-radius: 10px;
+  border-radius: 5px;
   z-index: 11;
 }
 
@@ -1241,7 +1239,7 @@ body {
 .popup h2 {
   text-align: left;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
@@ -1258,20 +1256,22 @@ body {
 }
 
 #user-name, #user-email, #user-message {
-  width: 269px;
-  height: 46px;
+  width: 240px;
+  height: 42px;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
   border-color: rgb(178, 178, 178); 
   background-color: rgb(255, 255, 255);  
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 #user-message {
-  width: 100%;
+  width: 395px;
+  padding-top: 10px;
   height: 150px;
+  margin-bottom: 10px;
 }
 
 .feedback-form p {
@@ -1300,6 +1300,7 @@ body {
 .feedback-form input[type=password],
 .feedback-form textarea {
   padding-left: 15px;
+  padding-right: 15px;
   color: #000000;
 }
 
@@ -1328,6 +1329,8 @@ body {
   
 .popup button {
   float: right;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 /*!
   * ===========================================================
@@ -1335,15 +1338,10 @@ body {
   * ===========================================================
   */ 
 .catalog-sub-menu-current a {
-  margin-left: 2px;
   background-color: #D07058;
   color: #ffffff;
   text-decoration:none; 
 } 
-
-.catalog-sub-menu-current a:hover {
-  margin-left: 2px;
-}
 
 .page-current .current {	
   margin-right: 4px;
