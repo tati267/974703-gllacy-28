@@ -390,7 +390,6 @@ body {
   line-height: 24px;
   padding-left: 25px;
   background-color: transparent;
-  border-radius: none;
   text-decoration: underline;
   text-decoration-color: rgba(50, 50, 50, 0.302);
 }
@@ -873,7 +872,7 @@ body {
   */
 .cards {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 40px;
 }
