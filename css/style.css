@@ -19,6 +19,7 @@ body {
 .site-page {
   width: 1146px;
   margin: 0 auto;
+  position: relative;
 }
 
 .visually-hidden {
@@ -614,7 +615,7 @@ body {
   width: 168px;
   position: absolute;
   text-align: right;
-  top: 54px;
+  top: 76px;
   right: 0;
   z-index: 19;
 }
