@@ -618,11 +618,16 @@ body {
   z-index: -1;
 }
 
-.phone-number p:last-child {
+.phone-number a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
   padding-top: 6px;
+
 }
 /*!
   * ===========================================================
@@ -679,28 +684,24 @@ body {
   font-weight: 700;
   line-height: 45px;
   position: absolute;
-  bottom: 65px;
+  bottom: 66px;
   left: 0px;
 }
 
-.currency {
-  position: absolute;
-}
-
-.currency:before {
+.currency-weight:before {
   position: absolute;
   content: "";
   position: absolute;
   width: 30px;
   height: 35px;
   top: 4px;
-  left: 14px;
+  left: 90px;
   background-image: url("../img/ruble.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.weight {
+.currency-weight {
   padding-left: 43px;
   font-size: 30px;
   font-weight: 700;
@@ -773,7 +774,7 @@ body {
   */
 .blocks {
   min-height: 306px;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 40px;
 }
 
@@ -879,7 +880,7 @@ body {
   margin-bottom: 40px;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .card {
@@ -1052,7 +1053,7 @@ body {
   background: #ffffff;
   width: 300px;
   position: absolute;
-  top: -370px;
+  top: -375px;
   right: 27px;
   z-index: 1;
   border-radius: 20px;
@@ -1071,7 +1072,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contacts-block p {
@@ -1083,7 +1084,7 @@ body {
   color: #323232;
 }
 
-.contacts-block p:nth-last-of-type(4) {
+.contacts-block p:nth-last-of-type(3) {
   padding-bottom: 20px;
 }
 
@@ -1092,8 +1093,9 @@ body {
 }
 
 .contacts-block p:last-of-type {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
+
 .contacts-address b {
   font-family: "Roboto", Arial, sans-serif;
   color: #323232;
@@ -1103,7 +1105,11 @@ body {
   line-height: 24px;
 }
 
-.contacts-phone b {
+.contacts-phone{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #323232;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -1177,7 +1183,7 @@ a {
   width: 304px;
   flex-wrap: wrap;
   margin: auto 0;
-  padding-top: 10px;
+  padding-top: 3px;
   padding-left: 38px;
 }
 
@@ -1230,7 +1236,7 @@ a {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .footer-copyright-logo {
@@ -1704,6 +1710,7 @@ legend {
 .select {
   padding-left: 15px;
   outline: none;
+  cursor: pointer;
 }
 
 .select option {
@@ -1793,6 +1800,8 @@ legend {
   border: 8px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
+  cursor: pointer;
+  outline: none;
 }
 
 .range-controls .toggle-min {
