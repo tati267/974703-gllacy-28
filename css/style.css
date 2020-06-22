@@ -18,6 +18,8 @@ body {
 
 .site-page {
   width: 1146px;
+  padding-left: 27px;
+  padding-right: 27px;
   margin: 0 auto;
   position: relative;
 }
@@ -256,8 +258,7 @@ body {
 .find-popup input {
   margin: 0;
   padding: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   width: 311px;
   height: 44px;
   border: 1px solid #d3d3d2;
@@ -280,6 +281,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  -moz-in: 10px;
 }
 
 .find:hover .find-popup {
@@ -302,23 +304,17 @@ body {
   border-radius: 25px;
 }
 
-.login-link::before {
+.login-link svg {
   content: "";
   position: absolute;
   top: 6px;
   left: 16px;
-  width: 21px;
+  width: 20px;
   height: 19px;
-  background-image: url("../img/login.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.login-link:hover:before {
-  background: #ffffff;
-  background-image: url("../img/login-onlinepngtools.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.login-link:hover svg path {
+  fill: #000000;
 }
 
 .login {
@@ -339,12 +335,11 @@ body {
 }
 
 .login-popup input {
-  width: 259px;
+  width: 241px;
   height: 44px;
   margin-bottom: 20px;
   border-radius: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   border: 1px solid #d3d3d2;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -413,7 +408,6 @@ body {
 }
 
 .basket {
-  position: relative;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -421,6 +415,7 @@ body {
 
 .basket a {
   padding: 9px 16px 9px 45px;
+  position: relative;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   list-style: none;
@@ -429,22 +424,18 @@ body {
   border-radius: 25px;
 }
 
-.basket-text::before {
+.basket-text svg{
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 16px;
   width: 21px;
   height: 20px;
-  background-image: url("../img/basket.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: transparent;
 }
 
-.basket-text:hover:before {
-  background-image: url("../img/basket-black.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.basket-text:hover svg g{
+  fill: #000000;
 }
 
 .container-sub-menu {
@@ -494,7 +485,7 @@ body {
 
 .site-wrapper {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   color: #000000;
   background-color: #849d8f;
@@ -510,9 +501,8 @@ body {
   padding: 0;
   color: #000000;
   background-color: #849d8f;
-  background-repeat: no-repeat;
-  background-position: top center;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+  background-repeat: repeat;
+  background-position: 0 0;
 }
 
 .site-wrapper-1 {
@@ -616,7 +606,7 @@ body {
   position: absolute;
   text-align: right;
   top: 76px;
-  right: 0;
+  right: 27px;
   z-index: 19;
 }
 
@@ -654,7 +644,7 @@ body {
   padding: 0;
   list-style: none;
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .product-item {
@@ -676,7 +666,7 @@ body {
   position: absolute;
   width: 61px;
   height: 61px;
-  background-image: url("../img/hit.png");
+  background-image: url("../img/hit.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   top: 0px;
@@ -689,7 +679,7 @@ body {
   font-weight: 700;
   line-height: 45px;
   position: absolute;
-  bottom: 63px;
+  bottom: 65px;
   left: 0px;
 }
 
@@ -717,17 +707,27 @@ body {
   line-height: 45px;
 }
 
-.product-item h3 {
+.product-item a {
   padding: 0;
   padding-top: 8px;
   margin: 0;
-  text-align: center;
+  width: 267px;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-item a:hover,
+.product-item a:active {
+  color: #FFBC9E;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .preview {
@@ -773,6 +773,7 @@ body {
   */
 .blocks {
   min-height: 306px;
+  margin-top: 5px;
   margin-bottom: 40px;
 }
 
@@ -787,6 +788,7 @@ body {
   flex-wrap: wrap;
   border-radius: 20px;
   margin-bottom: 40px;
+  
 }
 
 .seo h2 {
@@ -873,8 +875,10 @@ body {
   */
 .cards {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -883,6 +887,7 @@ body {
   border-radius: 20px;
   padding: 16px 22px 22px 16px;
   text-align: left;
+  
 }
 
 .card h2 {
@@ -892,16 +897,18 @@ body {
   font-weight: 700;
   line-height: 41px;
   margin-bottom: 15px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .card p {
   margin: 0;
   padding: 0;
-  max-width: 514px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
+  box-sizing: border-box;
 }
 
 .card-raspberry {
@@ -920,7 +927,7 @@ body {
   background-color: transparent;
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .card-raspberry,
@@ -939,7 +946,7 @@ body {
   color: #323232;
   background-position: 0 0;
   background-repeat: no-repeat;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-top: 20px;
 }
 
@@ -957,6 +964,8 @@ body {
 .news a {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  width: 287px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -983,7 +992,7 @@ body {
 .email p {
   color: #5b5a56;
   margin: 0;
-  padding: 8px 0 40px 5px;
+  padding: 8px 0 45px 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -1027,22 +1036,24 @@ body {
   */
 .map {
   margin-top: 40px;
-  margin-left: -27px;
-  position: relative;
-  width: 100%;
-  height: 430px;
 }
 
 .map iframe {
   border: 0;
+  width: 100%;
+  height: 430px;
+}
+
+.map .site-page{
+  position: relative;
 }
 
 .contacts-block {
   background: #ffffff;
   width: 300px;
   position: absolute;
-  top: 65px;
-  right: -27px;
+  top: -370px;
+  right: 27px;
   z-index: 1;
   border-radius: 20px;
 }
@@ -1053,13 +1064,13 @@ body {
 }
 
 .contacts-block-button {
-  width: 100%;
+  width: 98%;
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 0 10px;
+  padding: 10px 0;
   margin-bottom: 20px;
 }
 
@@ -1078,7 +1089,6 @@ body {
 
 .contacts-block p:nth-last-of-type(2) {
   padding-top: 3px;
-  padding-bottom: 3px;
 }
 
 .contacts-block p:last-of-type {
@@ -1097,6 +1107,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  padding-bottom: 2px;
 }
 /*!
   * ===========================================================
@@ -1106,14 +1117,13 @@ body {
 .footer {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
   min-height: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   color: #ffffff;
   display: grid;
-  grid-template-columns: 165px 304px 190px;
+  grid-template-columns: 166px 350px 190px;
 }
 
 .footer-social li,
@@ -1163,9 +1173,12 @@ a {
 
 .about-company {
   display: flex;
-  height: 50px;
+  height: 48px;
+  width: 304px;
   flex-wrap: wrap;
   margin: auto 0;
+  padding-top: 10px;
+  padding-left: 38px;
 }
 
 .about-company li {
@@ -1182,7 +1195,6 @@ a {
 }
 
 .about-company li:first-child a {
-  padding-right: 30px;
   font-weight: 700;
   position: relative;
 }
@@ -1199,8 +1211,12 @@ a {
   background-position: center;
 }
 
-.about-company li:nth-child(3) a {
-  padding-right: 42px;
+.about-company li:nth-child(2) a {
+  padding-left: 32px;
+}
+
+.about-company li:nth-child(4) a {
+  padding-left: 44px;
 }
 
 .about-company a:hover,
@@ -1214,7 +1230,7 @@ a {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  margin-top: 10px;
+  padding-top: 15px;
 }
 
 .footer-copyright-logo {
@@ -1304,9 +1320,9 @@ p {
   font-weight: 400;
 }
 
-#user-name,
-#user-email,
-#user-message {
+.user-name,
+.user-email,
+.user-message {
   width: 267px;
   height: 42px;
   border-style: solid;
@@ -1318,7 +1334,7 @@ p {
   box-sizing: border-box;
 }
 
-#user-message {
+.user-message {
   width: 428px;
   padding-top: 10px;
   height: 150px;
@@ -1343,16 +1359,14 @@ p {
   font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 16px; 
 }
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form input[type="password"],
 .feedback-form textarea {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
   font-style: normal;
@@ -1410,8 +1424,9 @@ p {
 }
 
 .page-current .current {
+  margin-top: 3px;;
   margin-right: 4px;
-  padding: 10px 15px;
+  padding: 8px 15px 6px 15px;
   color: #ffffff;
   background-color: #d07058;
   border-radius: 25px;
@@ -1431,16 +1446,14 @@ p {
   background-color: #fff;
 }
 
-.basket-full::before {
+.basket-full svg{
   content: "";
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 16px;
   width: 21px;
   height: 20px;
-  background-image: url("../img/basket-red.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: transparent;
 }
 
 .basket {
@@ -1550,7 +1563,7 @@ p {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
-  padding: 5px 0 3px 0;
+  padding: 5px 0 2px 0;
   position: relative;
 }
 
@@ -1559,7 +1572,7 @@ p {
   font-weight: 400;
   line-height: 16px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .breadcrumbs li:first-child {
@@ -1634,7 +1647,7 @@ p {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 /*!
  * ===========================================================
@@ -1673,18 +1686,18 @@ legend {
 .filter-wrapper-2 {
   display: flex;
   justify-content: space-between;
-  width: 860px;
+  width: 869px;
 }
 
 .filter-wrapper-1 {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
 }
 /*!
  * ===========================================================
  * CATALOG FILTERS - filter sorting SECTION
  * ===========================================================
  */
-.filter-sorting label {
+.filter-sorting legend {
   padding-left: 11px;
 }
 
@@ -1734,6 +1747,14 @@ legend {
  * CATALOG FILTERS - filter price SECTION
  * ===========================================================
  */
+
+ .filter-price legend {
+   padding-left: 12px;
+ }
+
+ .filter-price .left-price{
+   padding-right: 15px;
+ }
 
 .range-controls {
   position: relative;
@@ -1787,8 +1808,8 @@ legend {
  * CATALOG FILTERS - fat filter SECTION
  * ===========================================================
  */
-.fat-filter ul,
-.filler-filter ul {
+
+.fat-filter ul {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -1796,27 +1817,23 @@ legend {
 }
 
 .fat-filter ul {
-  width: 414px;
+  width: 425px;
   height: 36px;
   border-radius: 15px;
 }
 
-.filter-price legend,
-.filler-filter legend {
-  padding-left: 8px;
-}
-
 .fat-filter legend {
-  padding-left: 6px;
+  padding-left: 10px;
 }
 
 .fat-filter li {
   position: relative;
   padding-top: 7px;
+
 }
 
 .fat-filter li:first-child {
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 .fat-filter li:last-child {
@@ -1854,13 +1871,23 @@ legend {
  * ===========================================================
  */
 .filler-filter ul {
-  width: 702px;
+  width: 711px;
   height: 36px;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .filler-filter label {
   position: relative;
+}
+
+.filler-filter legend {
+  padding-left: 11px;
+  padding-top: 0px;
+  padding-bottom: 3px;
 }
 
 .filter-option {
@@ -1882,15 +1909,23 @@ legend {
   margin-left: 36px;
 }
 
+.filler-filter li:nth-child(2) {
+  margin-left: -3px;
+}
+
+.filler-filter li:nth-child(3) {
+  margin-left: 3px;
+}
+
 .filler-filter li:last-child {
-  margin-right: 18px;
+  margin-right: 22px;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -20px;
-  top: -2px;
+  left: -18px;
+  top: 0px;
   width: 20px;
   height: 20px;
   background-image: url("../img/checkbox-off.png");
@@ -1903,7 +1938,7 @@ legend {
   content: "";
   position: absolute;
   left: -22px;
-  top: -4px;
+  top: -2px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.png");
@@ -1975,8 +2010,7 @@ button.filter-button:focus {
  * ===========================================================
  */
 .paginator {
-  padding-top: 47px;
-  padding-bottom: 32px;
+  padding: 42px 0 32px 0;
   text-align: right;
 }
 
