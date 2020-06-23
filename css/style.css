@@ -994,7 +994,7 @@ body {
 .email p {
   color: #5b5a56;
   margin: 0;
-  padding: 8px 0 45px 5px;
+  padding: 8px 0 40px 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -1020,7 +1020,7 @@ body {
 
 .email button {
   padding: 10px 15px;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .email input::placeholder {
@@ -1037,7 +1037,7 @@ body {
   * ===========================================================
   */
 .map {
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .map iframe {
@@ -1062,7 +1062,7 @@ body {
 
 .contacts-block-container {
   margin: 20px;
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .contacts-block-button {
@@ -1184,7 +1184,6 @@ a {
   width: 304px;
   flex-wrap: wrap;
   margin: auto 0;
-  padding-top: 0px;
   padding-left: 38px;
 }
 

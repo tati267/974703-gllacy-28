@@ -133,6 +133,7 @@
           </section>
 
           <section class="products">
+            <h2 class="visually-hidden">Мороженое</h2>
             <ul class="products-list">
               <li class="product-item hit">
                 <img src="img/product-one.jpg" width="267" height="267" alt="Сливочное">
@@ -295,28 +296,29 @@
         </footer>
       </div>
     </div>
+  </div>
 
-    <div class="overlay"></div>
-    <section class="popup">
-      <h2>Мы обязательно вам ответим!</h2>
-      <form class="feedback-form" id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-name">Как вас зовут?</label>
-          <input class="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-email">Ваша почта для ответа?</label>
-          <input class="user-email" type="email" name="user-email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-message">Напишите что-нибудь...</label>
-          <textarea class="user-message" name="message" placeholder="В свободной форме" required></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
-    </section>
-    <script src="js/script.js"></script>
+  <div class="overlay"></div>
+  <section class="popup">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="feedback-form" id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden">Как вас зовут?</label>
+        <input class="user-name" type="text" name="user-name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label class="visually-hidden">Ваша почта для ответа?</label>
+        <input class="user-email" type="email" name="user-email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label class="visually-hidden">Напишите что-нибудь...</label>
+        <textarea class="user-message" name="message" placeholder="В свободной форме" required></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
