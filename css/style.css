@@ -259,7 +259,7 @@ body {
 .find-popup input {
   margin: 0;
   padding: 0;
-  padding: 15px;
+  padding: 13px 15px;
   width: 311px;
   height: 44px;
   border: 1px solid #d3d3d2;
@@ -340,7 +340,7 @@ body {
   height: 44px;
   margin-bottom: 20px;
   border-radius: 7px;
-  padding: 15px;
+  padding: 13px 15px;
   border: 1px solid #d3d3d2;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -967,6 +967,7 @@ body {
   margin: 0;
   padding: 0;
   display: inline-block;
+  text-decoration: underline;
   width: 287px;
   font-size: 24px;
   font-weight: 700;
@@ -989,22 +990,24 @@ body {
   border-image-source: url("../img/mail-border.png");
   border-image-slice: 5;
   margin-left: 32px;
+  padding-right: 20px;
 }
 
 .email p {
   color: #5b5a56;
   margin: 0;
+  width: 100%;
   padding: 8px 0 40px 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 .email input {
   width: 368px;
   height: 44px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 6px 14px;
   border-radius: 5px;
   outline-color: rgba(46, 136, 228, 0.52);
   border: 1px solid rgba(178, 178, 178, 0.52);
