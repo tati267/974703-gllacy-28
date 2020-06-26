@@ -259,7 +259,7 @@ body {
 .find-popup input {
   margin: 0;
   padding: 0;
-  padding: 13px 15px;
+  padding: 12px 15px;
   width: 311px;
   height: 44px;
   border: 1px solid #d3d3d2;
@@ -282,8 +282,8 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  -moz-in: 10px;
 }
+
 
 .find:hover .find-popup {
   display: block;
@@ -340,7 +340,7 @@ body {
   height: 44px;
   margin-bottom: 20px;
   border-radius: 7px;
-  padding: 13px 15px;
+  padding: 12px 15px;
   border: 1px solid #d3d3d2;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -985,12 +985,12 @@ body {
 }
 
 .email {
+  padding: 16px 16px 22px 22px;
   background: #f8f7f3;
   border: 5px solid transparent;
   border-image-source: url("../img/mail-border.png");
   border-image-slice: 5;
   margin-left: 32px;
-  padding-right: 20px;
 }
 
 .email p {
@@ -1007,11 +1007,11 @@ body {
 .email input {
   width: 368px;
   height: 44px;
-  padding: 6px 14px;
+  padding: 7px 14px;
+  margin-bottom:10px;
   border-radius: 5px;
   outline-color: rgba(46, 136, 228, 0.52);
   border: 1px solid rgba(178, 178, 178, 0.52);
-  margin: 0 0 10px 5px;
   box-sizing: border-box;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
@@ -1032,6 +1032,10 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  line-height: 24px;
+}
+
+.email input::-moz-placeholder{
   line-height: 24px;
 }
 /*!
@@ -1375,7 +1379,7 @@ p {
 .feedback-form input[type="email"],
 .feedback-form input[type="password"],
 .feedback-form textarea {
-  padding: 15px;
+  padding: 7px 15px;
   font-family: "Roboto", Arial, sans-serif;
   color: #000000;
   font-style: normal;
