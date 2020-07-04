@@ -173,7 +173,7 @@ body {
 .catalog-sub-menu li:first-child:before {
   content: "";
   position: absolute;
-  top: 26px;
+  top: 28px;
   left: 7px;
   width: 128px;
   height: 1px;
