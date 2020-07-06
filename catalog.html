@@ -44,11 +44,12 @@
                     d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
                 </svg>
               </button>
-              <div class="container-find-popup"></div>
-              <div class="find-popup">
-                <form class="find" id="search-form" action="/" method="get">
-                  <input type="text" placeholder="Что ищем?" />
-                </form>
+              <div class="find-popup-wrapper">
+                <div class="find-popup">
+                  <form class="find" id="search-form" action="/" method="get">
+                    <input type="text" placeholder="Что ищем?" />
+                  </form>
+                </div>
               </div>
             </div>
 
@@ -59,19 +60,20 @@
                     d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
                     fill="white" />
                 </svg>Вход</a>
-              <div class="container-login-popup"></div>
-              <div class="login-popup">
-                <form class="login-form" id="login-form" action="/" method="post">
-                  <input type="email" name="email" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <div class="links-container">
-                    <button class="button button-login" type="button">Войти</button>
-                    <div class="login-popup-links">
-                      <a href="#.">Забыли пароль?</a>
-                      <a href="#.">Новая регистрация</a>
+              <div class="login-popup-wrapper">
+                <div class="login-popup">
+                  <form class="login-form" id="login-form" action="/" method="post">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <div class="links-container">
+                      <button class="button button-login" type="button">Войти</button>
+                      <div class="login-popup-links">
+                        <a href="#.">Забыли пароль?</a>
+                        <a href="#.">Новая регистрация</a>
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
 
@@ -89,26 +91,29 @@
                     fill="#343434" />
                   <path d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="#E84D37" />
                 </svg>2 товара</a>
-              <div class="basket-popup">
-                <ul class="basket-products">
-                  <li class="basket-product">
-                    <button class="basket-button-delete"></button>
-                    <img src="img/product-one.jpg" width="33" height="33" alt="Сливочное">
-                    <p>Пломбир с апельсиновым джемом</p>
-                    <p class="weight-price">1,5 кг х <span class="price-for-kg">200 руб.</span></p>
-                    <p class="final-price">300 руб.</p>
-                  </li>
 
-                  <li class="basket-product">
-                    <button class="basket-button-delete"></button>
-                    <img src="img/product-three.jpg" width="33" height="33" alt="Сливочно-клубничное">
-                    <p class="product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-                    <p class="weight-price">1,5 кг х <span class="price-for-kg">300 руб.</span></p>
-                    <p class="final-price">450 руб.</p>
-                  </li>
-                </ul>
-                <p class="total">Итого: 750 руб.</p>
-                <button class="button basket-button" type="button">Оформить заказ</button>
+              <div class="basket-popup-wrapper">
+                <div class="basket-popup">
+                  <ul class="basket-products">
+                    <li class="basket-product">
+                      <button class="basket-button-delete"></button>
+                      <img src="img/product-one.jpg" width="33" height="33" alt="Сливочное">
+                      <p>Пломбир с апельсиновым джемом</p>
+                      <p class="weight-price">1,5 кг х <span class="price-for-kg">200 руб.</span></p>
+                      <p class="final-price">300 руб.</p>
+                    </li>
+
+                    <li class="basket-product">
+                      <button class="basket-button-delete"></button>
+                      <img src="img/product-three.jpg" width="33" height="33" alt="Сливочно-клубничное">
+                      <p class="product-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                      <p class="weight-price">1,5 кг х <span class="price-for-kg">300 руб.</span></p>
+                      <p class="final-price">450 руб.</p>
+                    </li>
+                  </ul>
+                  <p class="total">Итого: 750 руб.</p>
+                  <button class="button basket-button" type="button">Оформить заказ</button>
+                </div>
               </div>
             </div>
           </div>
