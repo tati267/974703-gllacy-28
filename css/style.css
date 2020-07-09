@@ -761,7 +761,7 @@ body {
 }
 
 .preview button {
-  margin-top: 320px;
+  margin-top: 323px;
   z-index: 2;
 }
 
@@ -1698,7 +1698,7 @@ fieldset {
 
 legend {
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .catalog-filter {
@@ -2024,7 +2024,7 @@ fieldset ul {
  * ===========================================================
  */
 .paginator {
-  padding: 45px 0 31px 0;
+  padding: 40px 0 31px 0;
   text-align: right;
 }
 
@@ -2108,10 +2108,13 @@ a {
 
 .site-wrapper-catalog .products-list li:nth-child(9) a{
   width: 240px;
-
 }
 
 .site-wrapper-catalog .footer-copyright{
   padding-top: 13px;
+}
+
+.site-wrapper-catalog .about-company{
+  padding-top: 3px;
 }
 
