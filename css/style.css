@@ -97,11 +97,8 @@ body {
   list-style: none;
 }
 
-.site-navigation .navigation-item{
-  margin-right: 4px;
-}
-
 .site-navigation a {
+  margin-right: 4px;
   padding: 7px 15px;
   color: #ffffff;
   background-color: transparent;
@@ -1436,8 +1433,7 @@ p {
   text-decoration: none;
 }
 
-.page-current .current {
-  margin-right: 4px;
+.page-current .current { 
   padding: 7px 15px;
   color: #ffffff;
   background-color: #d07058;
