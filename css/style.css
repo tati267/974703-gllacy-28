@@ -1347,6 +1347,7 @@ p {
   width: 428px;
   padding-top: 10px;
   height: 154px;
+  margin-bottom: 21px;
 }
 
 .feedback-form p {
@@ -1394,8 +1395,8 @@ p {
 
 .popup-close {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 6px;
+  right: 10px;
   width: 18px;
   height: 17px;
   font-size: 0px;
@@ -1418,8 +1419,8 @@ p {
 .popup button {
   font-family: "Roboto", Arial, sans-serif;
   float: right;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 /*!
   * ===========================================================
@@ -1506,7 +1507,7 @@ p {
   align-items: center;
   flex-direction: row;
   position: relative;
-  padding: 0 0 20px 0;
+  padding: 0 0 22px 0;
 }
 
 .basket-products li:last-child{
