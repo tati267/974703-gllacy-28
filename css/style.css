@@ -387,13 +387,13 @@ body {
   font-weight: 400;
   line-height: 24px;
   padding-left: 20px;
-  margin-bottom: -3px;
   background-color: transparent;
   text-decoration: underline;
   text-decoration-color: rgba(50, 50, 50, 0.302);
 }
 
 .login-popup-links {
+  margin-top: -17px;
   width: 120px;
   background: transparent;
 }
@@ -668,23 +668,6 @@ body {
   border-radius: 50%;
 }
 
-.hit {
-  position: relative;
-}
-
-.hit:before {
-  content: "";
-  position: absolute;
-  width: 61px;
-  height: 61px;
-  background-image: url("../img/hit.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 0px;
-  z-index: 3;
-}
-
 .price {
   font-size: 45px;
   font-weight: 700;
@@ -694,21 +677,8 @@ body {
   left: 0px;
 }
 
-.currency-weight:before {
-  position: absolute;
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 35px;
-  top: 4px;
-  left: 89px;
-  background-image: url("../img/ruble.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
 .currency-weight {
-  padding-left: 43px;
+  padding-left: 10px;
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
@@ -1185,6 +1155,7 @@ a {
   height: 48px;
   width: 304px;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: auto 0;
   padding-left: 38px;
 }
@@ -1217,14 +1188,6 @@ a {
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.about-company li:nth-child(2) a {
-  padding-left: 32px;
-}
-
-.about-company li:nth-child(4) a {
-  padding-left: 44px;
 }
 
 .about-company a:hover,
