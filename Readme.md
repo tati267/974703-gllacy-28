@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [tanya](https://up.htmlacademy.ru/htmlcss/28/user/974703).
+* Студент: Tatiana Panteleeva.
 * Наставник: Никита Шугаев.
 
 ---
